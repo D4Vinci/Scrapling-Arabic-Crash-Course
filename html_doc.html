@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Complex Web Page</title>
+    <style>
+      .hidden { display: none; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li> <a href="#home">Home</a> </li>
+          <li> <a href="#about">About</a> </li>
+          <li> <a href="#contact">Contact</a> </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="products" schema='{"jsonable": "data"}'>
+        <h2>Products</h2>
+        <div class="product-list">
+          <article class="product" data-id="1">
+            <h3>Product 1</h3>
+            <p class="description">This is product 1</p>
+            <span class="price">$10.99</span>
+            <div class="hidden stock">In stock: 5</div>
+          </article>
+
+          <article class="product" data-id="2">
+            <h3>Product 2</h3>
+            <p class="description">This is product 2</p>
+            <span class="price">$20.99</span>
+            <div class="hidden stock">In stock: 3</div>
+          </article>
+
+          <article class="product" data-id="3">
+            <h3>Product 3</h3>
+            <p class="description">This is product 3</p>
+            <span class="price">$15.99</span>
+            <div class="hidden stock">Out of stock</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-list">
+          <div class="review" data-rating="5">
+            <p class="review-text">Great product!</p>
+            <span class="reviewer">John Doe</span>
+          </div>
+          <div class="review" data-rating="4">
+            <p class="review-text">Good value for money.</p>
+            <span class="reviewer">Jane Smith</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script id="page-data" type="application/json">
+      {
+        "lastUpdated": "2024-09-22T10:30:00Z",
+        "totalProducts": 3
+      }
+    </script>
+  </body>
+</html>

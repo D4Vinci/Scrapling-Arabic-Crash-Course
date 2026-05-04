@@ -1,0 +1,8 @@
+Use Scrapling to open a stealthy session with the browser visible, then open this url https://www.imdb.com/title/tt3032476/episodes/ and do the following:
+
+1. Extract all episode URLs using this selector `[data-testid="slate-list-card-title"] .ipc-title-link-wrapper`, then add this to each episode URL `/parentalguide/` so you can fetch the parental guide afterward for each episode.
+2. While on the same page, extract all the other seasons URLs using this selector `a[data-testid="tab-season-entry"]` and go to each season and collect episodes URLs as we explained.
+3. Go to the parental guide to each episode as explained and make note of the "Sex & Nudity" section of each episode. I want to know all episodes with nudity content. This section is using the selector `[data-testid="sub-section-nudity"]`.
+4. After you finish everything, close the session.
+
+Now tell me which episodes had sex scenes. Use bulk fetch whenever possible and set the max number of pages to 10.
